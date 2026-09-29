@@ -1,0 +1,470 @@
+/* ========================================
+   KALOKOL DELIVERY
+   TURKANA INSPIRED DESIGN
+======================================== */
+
+
+/* ========================================
+   RESET
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ========================================
+   BODY
+======================================== */
+
+body {
+    font-family: Arial, sans-serif;
+    background: #120d08;
+    color: white;
+}
+
+
+/* ========================================
+   MAIN IMAGE
+======================================== */
+
+body > img {
+    width: 100%;
+    height: 95vh;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* ========================================
+   HERO
+======================================== */
+
+.hero {
+    min-height: 100vh;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+}
+
+
+/* ========================================
+   DARK OVERLAY
+======================================== */
+
+.overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            rgba(18, 13, 8, 0.55),
+            rgba(18, 13, 8, 0.80)
+        );
+
+    z-index: 1;
+}
+
+
+/* ========================================
+   CONTENT
+======================================== */
+
+.content {
+    position: relative;
+
+    z-index: 2;
+
+    width: 90%;
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 50px 0;
+}
+
+
+/* ========================================
+   LOGO
+======================================== */
+
+.logo {
+    text-align: center;
+
+    margin-bottom: 35px;
+}
+
+
+.logo h1 {
+    font-size: clamp(28px, 5vw, 52px);
+
+    font-weight: 900;
+
+    letter-spacing: 4px;
+
+    color: #f4c15d;
+
+    text-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.8);
+}
+
+
+.logo h1::after {
+    content: "";
+
+    display: block;
+
+    width: 90px;
+    height: 4px;
+
+    margin: 12px auto 0;
+
+    background: #c96b32;
+
+    border-radius: 10px;
+}
+
+
+/* ========================================
+   INTRO
+======================================== */
+
+.intro {
+    text-align: center;
+
+    max-width: 700px;
+
+    margin: auto;
+
+    margin-bottom: 45px;
+}
+
+
+.small-text {
+    font-size: 12px;
+
+    letter-spacing: 4px;
+
+    color: #e8a94a;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+
+.intro h2 {
+    font-size: clamp(32px, 6vw, 60px);
+
+    line-height: 1.05;
+
+    margin-bottom: 18px;
+
+    font-weight: 800;
+}
+
+
+.intro h2 span {
+    color: #f4c15d;
+}
+
+
+.description {
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    color: #eee;
+
+    max-width: 600px;
+
+    margin: auto;
+}
+
+
+/* ========================================
+   CARDS
+======================================== */
+
+.cards {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px;
+
+    max-width: 800px;
+
+    margin: auto;
+}
+
+
+.card {
+    position: relative;
+
+    min-height: 170px;
+
+    padding: 25px;
+
+    text-decoration: none;
+
+    color: white;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    border: 1px solid rgba(244, 193, 93, 0.35);
+
+    background:
+        rgba(40, 27, 17, 0.55);
+
+    backdrop-filter: blur(10px);
+
+    -webkit-backdrop-filter: blur(10px);
+
+    transition:
+        transform 0.3s ease,
+        border 0.3s ease,
+        background 0.3s ease;
+
+    display: flex;
+
+    align-items: flex-end;
+}
+
+
+/* CARD HOVER */
+
+.card:hover {
+    transform: translateY(-7px);
+
+    border-color: #f4c15d;
+
+    background:
+        rgba(70, 43, 20, 0.75);
+}
+
+
+/* CARD OVERLAY */
+
+.card-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            transparent,
+            rgba(0, 0, 0, 0.85)
+        );
+
+    z-index: 1;
+}
+
+
+/* CARD CONTENT */
+
+.card-content {
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* CARD TITLE */
+
+.card h3 {
+    font-size: 24px;
+
+    margin-bottom: 7px;
+
+    color: #f4c15d;
+}
+
+
+.card p {
+    font-size: 14px;
+
+    color: #ddd;
+}
+
+
+/* ========================================
+   TURKANA INSPIRED ACCENTS
+======================================== */
+
+.login-card {
+    border-top: 4px solid #c96b32;
+}
+
+
+.signup-card {
+    border-top: 4px solid #e8a94a;
+}
+
+
+.products-card {
+    border-top: 4px solid #8f4e2a;
+}
+
+
+.track-card {
+    border-top: 4px solid #f4c15d;
+}
+
+
+/* ========================================
+   ICON
+======================================== */
+
+.icon {
+    display: block;
+
+    width: 42px;
+    height: 42px;
+
+    margin-bottom: 18px;
+
+    border-radius: 50%;
+
+    border: 2px solid #f4c15d;
+
+    background:
+        rgba(244, 193, 93, 0.12);
+}
+
+
+/* ========================================
+   FOOTER
+======================================== */
+
+footer {
+    position: relative;
+
+    z-index: 2;
+
+    text-align: center;
+
+    padding: 20px;
+
+    margin-top: auto;
+
+    background:
+        rgba(10, 7, 4, 0.65);
+
+    border-top:
+        1px solid rgba(244, 193, 93, 0.2);
+}
+
+
+.footer-links {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    margin-bottom: 10px;
+}
+
+
+.footer-links a {
+    color: #e8a94a;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+
+.footer-links a:hover {
+    color: #fff;
+
+    text-decoration: underline;
+}
+
+
+footer p {
+    font-size: 12px;
+
+    color: #aaa;
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 600px) {
+
+    body > img {
+        height: 95vh;
+    }
+
+
+    .content {
+        width: 92%;
+
+        padding: 35px 0;
+    }
+
+
+    .logo h1 {
+        letter-spacing: 2px;
+    }
+
+
+    .intro {
+        margin-bottom: 30px;
+    }
+
+
+    .intro h2 {
+        font-size: 36px;
+    }
+
+
+    .description {
+        font-size: 14px;
+    }
+
+
+    .cards {
+        grid-template-columns: 1fr;
+
+        gap: 14px;
+    }
+
+
+    .card {
+        min-height: 145px;
+
+        border-radius: 16px;
+    }
+
+
+    footer {
+        margin-top: 25px;
+    }
+}
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
